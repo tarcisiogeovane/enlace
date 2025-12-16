@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 15px;
+}
+
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+}
+
+#compass {
+  width: 220px;
+  height: 220px;
+  border: 6px solid #334155;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+}
+
+#needle, #target {
+  width: 4px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+#needle {
+  background: red;
+}
+
+#target {
+  background: lime;
+}
+
+.status {
+  font-size: 18px;
+}
