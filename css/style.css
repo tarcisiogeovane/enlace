@@ -1,48 +1,67 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
+  font-family: system-ui, Arial, sans-serif;
+  background: #020617;
   color: #e5e7eb;
   text-align: center;
-  padding: 15px;
+  padding: 12px;
+}
+
+h2 {
+  margin-bottom: 10px;
 }
 
 .card {
   background: #020617;
+  border: 1px solid #1e293b;
   border-radius: 12px;
-  padding: 15px;
-  margin-bottom: 15px;
+  padding: 12px;
+  margin-bottom: 12px;
 }
 
 input {
-  width: 90%;
+  width: 92%;
   padding: 8px;
   margin: 5px 0;
   border-radius: 6px;
-  border: none;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e5e7eb;
   text-align: center;
 }
 
 button {
-  padding: 10px 20px;
+  margin-top: 6px;
+  padding: 10px 18px;
   border: none;
   border-radius: 8px;
   background: #2563eb;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #compass {
-  width: 220px;
-  height: 220px;
-  border: 6px solid #334155;
+  width: 240px;
+  height: 240px;
+  border: 2px solid #334155;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 15px auto;
   position: relative;
 }
 
+.marker {
+  position: absolute;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.n { top: 5px; left: 50%; transform: translateX(-50%); }
+.s { bottom: 5px; left: 50%; transform: translateX(-50%); }
+.e { right: 8px; top: 50%; transform: translateY(-50%); }
+.w { left: 8px; top: 50%; transform: translateY(-50%); }
+
 #needle, #target {
   width: 4px;
-  height: 90px;
+  height: 100px;
   position: absolute;
   top: 20px;
   left: 50%;
@@ -50,13 +69,22 @@ button {
 }
 
 #needle {
-  background: red;
+  background: #ef4444;
 }
 
 #target {
-  background: lime;
+  background: #22c55e;
 }
 
-.status {
+.values {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.value span {
+  display: block;
   font-size: 18px;
+  font-weight: bold;
 }
